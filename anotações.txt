@@ -1,0 +1,6 @@
+reset para todos os elementos com propriedades margens e espaçamento das bordas
+O vh serve para o body ocupar a pagina toda
+height: 100vh;
+O conteudo da tag filho vai ficar sempre dentro da tag pai. https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+alinha o os iten filho no mesmo sntido
+alinha o itens no eixo. https://css-tricks.com/snippets/css/a-guide-to-flexbox/

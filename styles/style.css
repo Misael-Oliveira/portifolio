@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital@0;1&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffff;
+    --cor-terciaria: #17E165;
+
+    --fonte-primaria: "Michroma", sans-serif;
+    --fonte-secundaria:"Montserrat", sans-serif;
+}
+
+*{    /* reset para todos os elementos com propriedades margens e espaçamento das bordas*/
+    margin: 0;
+    padding: 0;
+}
+
+body { /* O vh serve para o Body ocupar a pagina toda*/
+    /*height: 100vh;*/
+    /*O conteudo da tag filho vai ficar sempre dentro da tag pai. https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria) ;
+    color: var(--cor-secundaria);
+}
+a {
+    color: DodgerBlue;
+
+}
+strong {
+    color: var(--cor-terciaria);
+}
+
+
+.destaque-paragrafo{
+    color: #aaaab1;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+   
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    
+    
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 100;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px ;
+
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+   width: 50%;
+   text-align: center;
+   text-decoration: none;
+   color: var(--cor-secundaria);
+   border: 2px solid var(--cor-terciaria);
+   border-radius: 8px;
+   padding: 21.5px 0;
+   font-size: 1.5rem;
+   font-family: var(--fonte-secundaria);
+   font-weight: 600;
+
+}
+.apresentacao__links__navegacao:hover{
+    border: 2px solid #68c41c;
+    cursor: pointer;
+    background-color: #272727;
+}
+
+.apresentacao__imagem{
+    width: 40%;
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        padding: 10%;
+        
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
